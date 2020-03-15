@@ -12,6 +12,8 @@ namespace Domain.Entities
         public Clan Clan { get; set; }
         public List<Quote> Quotes { get; set; }
 
+        public IList<SamuraiBattle> SamuraisInBattle { get; set; }
+
         public Samurai()
         {
             Quotes = new List<Quote>();

@@ -15,5 +15,10 @@ namespace Domain
             const string connectionString = "Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = LearningEFCore";
             optionsBuilder.UseSqlServer(connectionString);
         }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<SamuraiBattle>().HasKey(s => new { s.SamuraiId, s.BattleId});
+        }
     }
 }
