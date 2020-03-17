@@ -13,7 +13,7 @@ namespace Domain.Entities
         public List<Quote> Quotes { get; set; }
         public Horse Horse { get; set; }
 
-        public IList<SamuraiBattle> SamuraisInBattle { get; set; }
+        public IList<SamuraiBattle> SamuraiBattles { get; set; }
 
         public Samurai()
         {

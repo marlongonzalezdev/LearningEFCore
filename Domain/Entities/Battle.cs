@@ -10,6 +10,6 @@ namespace Domain.Entities
         public string Name { get; set; }
         public DateTime StartDate { set; get; }
         public DateTime EndDate { set; get; }
-        public IList<SamuraiBattle> BattlesFought { get; set; }
+        public IList<SamuraiBattle> SamuraiBattles { get; set; }
     }
 }
